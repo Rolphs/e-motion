@@ -106,6 +106,7 @@ Tokens disponibles en [`assets/tokens.json`](assets/tokens.json) y [`assets/toke
 
 ## Documentación
 
+- [`ROADMAP.md`](ROADMAP.md) — plan de arranque indicativo (fases, esquema de datos, decisiones técnicas).
 - [`docs/Colores-documento-proyecto.html`](docs/Colores-documento-proyecto.html) — documento del proyecto completo (11 secciones).
 - [`docs/Colores-deck.pptx`](docs/Colores-deck.pptx) — deck conceptual original (13 láminas).
 - [`docs/detallada/`](docs/detallada/) — espejo **interactivo** del documento del proyecto (`*.interactivo.html` + `support.js`), exportado con navegador embebido. Mismo contenido que el HTML plano, con UI navegable.
