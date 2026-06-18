@@ -1,0 +1,27 @@
+/* Design tokens — Colores (emotion / EIDOS)
+   Fuente: documento del proyecto y deck conceptual. */
+
+:root {
+  /* Paleta base (10 colores) */
+  --color-amarillo: #F9E547;
+  --color-naranja:  #FF9300;
+  --color-rojo:     #FF0000;
+  --color-azul:     #0077C8;
+  --color-verde:    #008F00;
+  --color-morado:   #9437FF;
+  --color-cafe:     #945200;
+  --color-negro:    #000000;
+  --color-gris:     #D6D6D6;
+  --color-blanco:   #F5FAFF;
+
+  /* Colores de marca */
+  --brand-tinta:         #28282D; /* texto / tinta principal */
+  --brand-azul-primario: #0071BC; /* color de marca primario */
+  --brand-acento:        #FF4600; /* acento / call to action */
+
+  /* Tipografía */
+  --font-titulos: "Raleway", sans-serif;        /* SemiBold */
+  --font-objetos: "Raleway", sans-serif;        /* Light */
+  --font-textos:  "Quattrocento", Georgia, serif;
+  --font-notas:   "Raleway Dots", cursive;
+}

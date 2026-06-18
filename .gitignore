@@ -1,0 +1,20 @@
+# OS junk
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Python / entornos (por si se prototipa el flujo de captura)
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+
+# Editores
+.vscode/
+.idea/
+
+# Datos sensibles / PII (el lexicón puede capturar datos de usuarios)
+*.secret
+data/private/

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Quattrocento:wght@400;700&family=Raleway+Dots&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #F5FAFF; }
+  .doc { box-sizing: border-box; max-width: 8.5in; margin: 0 auto; background: inherit;
+         padding: 64px clamp(24px, 5vw, 0.75in) 96px;
+         font-family: Quattrocento, Georgia, serif; color: #28282D;
+         font-size: 15.5px; line-height: 1.68; }
+  .doc-frame { width: 100%; border-collapse: collapse; }
+  .doc-frame td { padding: 0; }
+  .running-hdr, .running-ftr, .hdr-space, .ftr-space { display: none; }
+  .doc h1, .doc h2, .doc h3, .doc h4 { font-family: Raleway, sans-serif; color: #28282D; }
+  h1, h2, h3 { text-wrap: balance; }
+  p, li { text-wrap: pretty; }
+  .doc a { color: #0071BC; }
+  @page { size: letter; margin: 0; }
+  @media print {
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    html, body { margin: 0; padding: 0; }
+    .doc { max-width: none !important; margin: 0 !important; padding: 0 0.75in !important;
+           box-shadow: none !important; border: none !important; }
+    #dc-root, .sc-host { height: auto !important; }
+    .hdr-space, .ftr-space { display: table-cell; height: 0.7in !important; }
+    .running-hdr, .running-ftr { display: flex !important; justify-content: space-between;
+           align-items: baseline; position: fixed !important; left: 0; right: 0; margin: 0 !important;
+           font-family: Raleway, sans-serif; font-size: 10px; letter-spacing: 0.08em;
+           text-transform: uppercase; color: #9aa3ad; }
+    .running-hdr { top: 0; padding: 0.32in 0.75in 0 !important; }
+    .running-ftr { bottom: 0; padding: 0 0.75in 0.32in !important; }
+    h1, h2, h3, h4, h5, h6 { break-after: avoid; }
+    figure, pre, blockquote, .keep { break-inside: avoid; }
+    p, li { orphans: 3; widows: 3; }
+    .screen-only { display: none !important; }
+  }
+</style>
+</helmet>
+<main class="doc">
+  <table class="doc-frame" role="presentation">
+    <thead><tr><td class="hdr-space"></td></tr></thead>
+    <tbody><tr><td>
+
+      <div class="running-hdr"><span>Colores · EIDOS</span><span>Documento del proyecto</span></div>
+      <div class="running-ftr"><span>Confidencial</span><span>Borrador · 2026</span></div>
+
+      <!-- ===== PORTADA / RESUMEN ===== -->
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:18px">
+        <span style="width:16px;height:16px;border-radius:50%;background:#F9E547"></span>
+        <span style="width:16px;height:16px;border-radius:50%;background:#FF9300"></span>
+        <span style="width:16px;height:16px;border-radius:50%;background:#FF4600"></span>
+        <span style="width:16px;height:16px;border-radius:50%;background:#0071BC"></span>
+        <span style="width:16px;height:16px;border-radius:50%;background:#008F00"></span>
+        <span style="width:16px;height:16px;border-radius:50%;background:#9437FF"></span>
+        <span style="font-family:Raleway,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#0071BC;margin-left:8px">EIDOS · emotion · Documento del proyecto</span>
+      </div>
+
+      <h1 style="font-size:58px;font-weight:800;line-height:1.0;letter-spacing:-0.02em;margin:0 0 14px">Colores</h1>
+      <p style="font-family:Raleway,sans-serif;font-weight:300;font-size:23px;line-height:1.3;color:#28282D;margin:0 0 26px;max-width:32ch">Un lexicón colaborativo que traduce entre colores, palabras y emociones — la capa de captura de datos para hiperpersonalizar experiencias.</p>
+
+      <p style="font-size:18px;line-height:1.6;margin:0 0 8px;max-width:62ch">Colores recoge, palabra por palabra, qué color elige cada persona para representar un concepto —«felicidad», «cálido», «libertad»— y agrega esas decisiones en una base de datos consultable por palabra y por color. Usa el color como vehículo medible para entender cómo distintos segmentos de personas asocian conceptos con emociones; esas asociaciones, una vez aprendidas, se invierten para <strong>diseñar experiencias afinadas a cada perfil emocional</strong>. Colores es la capa de captura de un proyecto mayor: vive dentro de <strong>emotion</strong>, en la iniciativa <strong>EIDOS</strong>.</p>
+
+      <div class="keep" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0 8px">
+        <div style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:18px 18px 16px">
+          <div style="font-family:Raleway,sans-serif;font-weight:800;font-size:30px;color:#0071BC;line-height:1">2 500</div>
+          <div style="font-family:Raleway,sans-serif;font-size:13px;font-weight:500;color:#5a6068;margin-top:4px">palabras en el léxico objetivo</div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:18px 18px 16px">
+          <div style="font-family:Raleway,sans-serif;font-weight:800;font-size:30px;color:#FF4600;line-height:1">10</div>
+          <div style="font-family:Raleway,sans-serif;font-size:13px;font-weight:500;color:#5a6068;margin-top:4px">colores base de la paleta</div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:18px 18px 16px">
+          <div style="font-family:Raleway,sans-serif;font-weight:800;font-size:30px;color:#008F00;line-height:1">5</div>
+          <div style="font-family:Raleway,sans-serif;font-size:13px;font-weight:500;color:#5a6068;margin-top:4px">herramientas en el menú</div>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid rgba(40,40,45,.12);margin:34px 0">
+
+      <!-- ===== 1. VISIÓN ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:0 0 6px">01 — La visión</h2>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">Un diccionario del color, escrito por todos</h3>
+      <p style="margin:0 0 14px">No existe un consenso documentado sobre qué color significa qué. El significado del color es subjetivo, cultural y emocional —y sin embargo todos lo damos por sentado al diseñar, comunicar o crear. Lexicon convierte esa intuición en <strong>datos</strong>: cada elección individual es una entrada; millones de entradas forman un mapa estadístico de cómo una cultura siente el color.</p>
+      <p style="margin:0 0 14px">El resultado es bidireccional. Desde una <em>palabra</em> puedes ver su firma cromática —los colores con los que más se la asocia y en qué proporción—. Desde un <em>color</em> puedes ver el universo de palabras, sentimientos y rankings que lo rodean. Y desde un <em>texto o una imagen</em> puedes leer su temperatura emocional traducida a color.</p>
+
+      <!-- ===== 2. PROBLEMA Y OPORTUNIDAD ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">02 — El problema y la oportunidad</h2>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">El color comunica emoción, pero nadie lo ha medido</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:6px 0 4px">
+        <div>
+          <h4 style="font-size:16px;font-weight:700;margin:0 0 6px;color:#FF4600">El problema</h4>
+          <ul style="margin:0;padding-left:18px">
+            <li style="margin-bottom:7px">Diseñadores, marcas y artistas eligen color por intuición o tendencia, sin evidencia de qué siente la gente.</li>
+            <li style="margin-bottom:7px">Las asociaciones color↔emoción varían por género, edad y país, y nadie las tiene cuantificadas.</li>
+            <li style="margin-bottom:7px">No hay forma de auditar si una paleta «dice» lo que pretende decir.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-size:16px;font-weight:700;margin:0 0 6px;color:#008F00">La oportunidad</h4>
+          <ul style="margin:0;padding-left:18px">
+            <li style="margin-bottom:7px">Crowdsourcing estructurado: un test corto y adictivo genera datos limpios a escala.</li>
+            <li style="margin-bottom:7px">Un activo único —el léxico— que ninguna herramienta de color posee hoy.</li>
+            <li style="margin-bottom:7px">Aplicable a branding, marketing, arte, investigación y accesibilidad.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ===== 3. CÓMO FUNCIONA ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">03 — Cómo funciona</h2>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">La mecánica de asociación palabra ↔ color</h3>
+      <p style="margin:0 0 18px">El núcleo es un bucle simple y repetible. Se presenta una palabra con su definición del DRAE para fijar el sentido, y se pide a la persona que elija <strong>el color que asocia</strong> con ella. Cada elección se agrega al léxico. La instrucción es clara: <em>al llegar al sitio siempre hay que resolver esto antes de revisar cualquier información.</em></p>
+
+      <figure class="keep" style="margin:0 0 18px">
+        <div style="display:flex;align-items:stretch;gap:0;background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:12px;overflow:hidden">
+          <div style="flex:1;padding:18px 16px;text-align:center">
+            <div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Palabra + definición</div>
+            <div style="font-size:13px;color:#5a6068;margin-top:4px;line-height:1.4">«Felicidad» con su acepción del DRAE</div>
+          </div>
+          <div style="display:flex;align-items:center;color:#0071BC;font-size:22px;padding:0 4px">→</div>
+          <div style="flex:1;padding:18px 16px;text-align:center;background:#F5FAFF">
+            <div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Eliges un color</div>
+            <div style="display:flex;justify-content:center;gap:5px;margin-top:8px">
+              <span style="width:14px;height:14px;border-radius:3px;background:#F9E547"></span>
+              <span style="width:14px;height:14px;border-radius:3px;background:#FF9300"></span>
+              <span style="width:14px;height:14px;border-radius:3px;background:#0071BC"></span>
+              <span style="width:14px;height:14px;border-radius:3px;background:#9437FF"></span>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;color:#0071BC;font-size:22px;padding:0 4px">→</div>
+          <div style="flex:1;padding:18px 16px;text-align:center">
+            <div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Se agrega al léxico</div>
+            <div style="font-size:13px;color:#5a6068;margin-top:4px;line-height:1.4">una entrada más en la firma de la palabra</div>
+          </div>
+        </div>
+        <figcaption style="font-family:Raleway,sans-serif;font-size:12px;color:#9aa3ad;margin-top:8px;text-align:center">El bucle central: definir → elegir → agregar. Se repite palabra tras palabra.</figcaption>
+      </figure>
+
+      <div class="keep" style="background:rgba(0,113,188,.06);border-radius:10px;padding:16px 18px;margin:0 0 6px">
+        <div style="font-family:Raleway,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#0071BC;margin-bottom:6px">Test de calibración</div>
+        <p style="margin:0">Cada 3 a 5 saltos de página aparece un micro-test —«¿cuál te hace <strong>más</strong> y <strong>menos</strong> sentido?»— que contrasta varias palabras (Felicidad, Cálido, Deporte, Decadente). Sirve para validar coherencia, depurar ruido y calibrar las asociaciones sin fatigar al usuario.</p>
+      </div>
+
+      <!-- ===== 4. FLUJOS ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">04 — Los flujos</h2>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">Qué puedes hacer dentro de Lexicon</h3>
+      <p style="margin:0 0 16px">Tras resolver las palabras base —o al registrarse— se desbloquea el menú principal: <strong>«¿Qué quieres hacer?»</strong>. Cinco caminos.</p>
+
+      <figure class="keep" style="margin:0 0 10px">
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <div style="flex:1;min-width:150px;background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:14px 16px">
+            <div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px;color:#FF4600">Calibrar colores</div>
+            <div style="font-size:13px;color:#5a6068;line-height:1.4;margin-top:3px">Afinar el matiz exacto que la persona tenía en mente.</div>
+          </div>
+          <div style="flex:1;min-width:150px;background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:14px 16px">
+            <div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px;color:#FF4600">Clasificar más palabras</div>
+            <div style="font-size:13px;color:#5a6068;line-height:1.4;margin-top:3px">Seguir alimentando el léxico con nuevos conceptos.</div>
+          </div>
+          <div style="flex:1;min-width:150px;background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:14px 16px">
+            <div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px;color:#0071BC">Biblioteca de colores</div>
+            <div style="font-size:13px;color:#5a6068;line-height:1.4;margin-top:3px">Explorar el léxico completo (la sección Lexicon).</div>
+          </div>
+          <div style="flex:1;min-width:150px;background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:14px 16px">
+            <div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px;color:#008F00">Análisis de texto</div>
+            <div style="font-size:13px;color:#5a6068;line-height:1.4;margin-top:3px">Leer el color emocional de un texto.</div>
+          </div>
+          <div style="flex:1;min-width:150px;background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:14px 16px">
+            <div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px;color:#9437FF">Análisis de imagen</div>
+            <div style="font-size:13px;color:#5a6068;line-height:1.4;margin-top:3px">Extraer la paleta de una imagen y traducirla.</div>
+          </div>
+        </div>
+        <figcaption style="font-family:Raleway,sans-serif;font-size:12px;color:#9aa3ad;margin-top:8px;text-align:center">El menú aparece tras resolver lo anterior, o directamente para usuarios registrados.</figcaption>
+      </figure>
+
+      <!-- ===== 5. DATA POR PALABRA Y POR COLOR ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">05 — El léxico como data</h2>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">Dos formas de leer el mismo dato</h3>
+
+      <h4 style="font-size:17px;font-weight:700;margin:18px 0 8px">Data por palabra</h4>
+      <p style="margin:0 0 14px">Cada palabra tiene una firma cromática: los colores con los que más se la asocia y su peso relativo. Para <strong>«felicidad»</strong>, el TOP de colores se distribuye así:</p>
+
+      <figure class="keep" style="margin:0 0 22px">
+        <div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px;margin-bottom:8px">Felicidad — TOP colores asociados</div>
+        <div style="display:flex;height:48px;border-radius:8px;overflow:hidden;border:1px solid rgba(40,40,45,.08)">
+          <div style="width:50%;background:#F9E547;display:flex;align-items:center;justify-content:center;font-family:Raleway,sans-serif;font-weight:700;font-size:13px;color:#28282D">50%</div>
+          <div style="width:30%;background:#FF9300;display:flex;align-items:center;justify-content:center;font-family:Raleway,sans-serif;font-weight:700;font-size:13px;color:#fff">30%</div>
+          <div style="width:10%;background:#0077C8;display:flex;align-items:center;justify-content:center;font-family:Raleway,sans-serif;font-weight:700;font-size:11px;color:#fff">10%</div>
+          <div style="width:7%;background:#008F00"></div>
+          <div style="width:3%;background:#9437FF"></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-family:Raleway,sans-serif;font-size:12px;color:#5a6068">
+          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#F9E547;margin-right:5px"></span>Amarillo · Sol, Energía, Gusto, Suerte</span>
+          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#FF9300;margin-right:5px"></span>Naranja · Cálido, Luz, Libertad</span>
+          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#0077C8;margin-right:5px"></span>Azul · Tranquilo, Confianza</span>
+          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#008F00;margin-right:5px"></span>Verde · Progreso</span>
+          <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#9437FF;margin-right:5px"></span>Morado · Magia, Místico</span>
+        </div>
+        <figcaption style="font-family:Raleway,sans-serif;font-size:12px;color:#9aa3ad;margin-top:10px">Distribución ilustrativa basada en el deck. Cada color arrastra sus propias sub-asociaciones.</figcaption>
+      </figure>
+
+      <h4 style="font-size:17px;font-weight:700;margin:18px 0 8px">Data por color</h4>
+      <p style="margin:0 0 14px">La vista inversa: un color y todo lo que lo rodea —valores técnicos, volumen de entradas, rankings demográficos y las palabras que comparten su firma.</p>
+
+      <figure class="keep" style="margin:0 0 10px">
+        <div style="border:1px solid rgba(40,40,45,.1);border-radius:12px;overflow:hidden">
+          <div style="background:#0000FF;color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:flex-end">
+            <div style="font-family:Raleway,sans-serif;font-weight:800;font-size:30px;letter-spacing:0.04em">AZUL</div>
+            <div style="font-family:Raleway,sans-serif;font-size:12px;text-align:right;line-height:1.5;opacity:.92">
+              R0 G0 B255 · HEX 0000FF<br>C88% M68% Y0% K0%
+            </div>
+          </div>
+          <div style="padding:18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:18px">
+            <div>
+              <div style="font-family:Raleway,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#9aa3ad;margin-bottom:8px">Posición</div>
+              <ul style="margin:0;padding-left:16px;font-size:13.5px;line-height:1.6">
+                <li>Nº 1 de preferencia en total</li>
+                <li>Nº 1 entre hombres</li>
+                <li>Nº 2 entre mujeres</li>
+                <li>Nº 3 en tu país</li>
+              </ul>
+              <div style="font-family:Raleway,sans-serif;font-size:12px;color:#5a6068;margin-top:12px;line-height:1.5">
+                <strong>1 000 456</strong> entradas · TOP&nbsp;Box en 100 / 2 500 palabras · TOP5&nbsp;Box en 300 / 2 500.
+              </div>
+            </div>
+            <div>
+              <div style="font-family:Raleway,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#9aa3ad;margin-bottom:8px">Otras palabras en azul</div>
+              <div style="display:flex;flex-direction:column;gap:7px">
+                <div><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>Tranquilo</span><span style="color:#0071BC;font-weight:700">90%</span></div><div style="height:5px;background:#e4ecf5;border-radius:3px;margin-top:2px"><div style="width:90%;height:5px;background:#0077C8;border-radius:3px"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>Confianza</span><span style="color:#0071BC;font-weight:700">10%</span></div><div style="height:5px;background:#e4ecf5;border-radius:3px;margin-top:2px"><div style="width:10%;height:5px;background:#0077C8;border-radius:3px"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>Libertad</span><span style="color:#0071BC;font-weight:700">3%</span></div><div style="height:5px;background:#e4ecf5;border-radius:3px;margin-top:2px"><div style="width:3%;height:5px;background:#0077C8;border-radius:3px"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>Frío</span><span style="color:#0071BC;font-weight:700">1%</span></div><div style="height:5px;background:#e4ecf5;border-radius:3px;margin-top:2px"><div style="width:2%;height:5px;background:#0077C8;border-radius:3px"></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption style="font-family:Raleway,sans-serif;font-size:12px;color:#9aa3ad;margin-top:8px">Ficha de color: valores, volumen, rankings demográficos y palabras de firma compartida.</figcaption>
+      </figure>
+
+      <!-- ===== 6. ANÁLISIS TEXTO E IMAGEN ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">06 — Herramientas de análisis</h2>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">Leer el color de un texto o una imagen</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+        <div class="keep" style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:16px 18px">
+          <h4 style="font-size:16px;font-weight:700;margin:0 0 6px;color:#008F00">Análisis de texto</h4>
+          <p style="margin:0 0 8px;font-size:14px">Pegas un texto y Lexicon devuelve <strong>su color</strong>: la distribución cromática de las palabras reconocidas (50/30/10/7/3), los conceptos dominantes y un listado de las palabras que aún no están en el léxico —candidatas a clasificar.</p>
+        </div>
+        <div class="keep" style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:16px 18px">
+          <h4 style="font-size:16px;font-weight:700;margin:0 0 6px;color:#9437FF">Análisis de imagen</h4>
+          <p style="margin:0 0 8px;font-size:14px">Subes una imagen y se extrae su paleta dominante —Naranja, Amarillo, Azul, Morado, otros— con su peso. Esa paleta se traduce a las palabras y emociones del léxico, cerrando el círculo del color al significado.</p>
+        </div>
+      </div>
+
+      <!-- ===== 7. LEXICON ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">07 — La biblioteca</h2>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">Lexicon: el léxico, navegable de la A a la Z</h3>
+      <p style="margin:0 0 14px">Toda la data agregada vive en una biblioteca explorable alfabéticamente. Cada palabra abre su firma cromática; cada color abre su ficha. Es a la vez el archivo del proyecto y su producto consultable.</p>
+      <div class="keep" style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 4px">
+        <span style="font-family:Raleway,sans-serif;font-weight:800;font-size:14px;color:#0071BC;align-self:center">A</span>
+        <span style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:20px;padding:5px 12px;font-family:Raleway,sans-serif;font-size:13px">Alegría</span>
+        <span style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:20px;padding:5px 12px;font-family:Raleway,sans-serif;font-size:13px">Alto</span>
+        <span style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:20px;padding:5px 12px;font-family:Raleway,sans-serif;font-size:13px">Adicional</span>
+        <span style="font-family:Raleway,sans-serif;font-weight:800;font-size:14px;color:#0071BC;align-self:center;margin-left:8px">B</span>
+        <span style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:20px;padding:5px 12px;font-family:Raleway,sans-serif;font-size:13px">Belleza</span>
+        <span style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:20px;padding:5px 12px;font-family:Raleway,sans-serif;font-size:13px">Brillo</span>
+        <span style="color:#9aa3ad;align-self:center;font-family:Raleway,sans-serif;font-size:13px">… Z</span>
+      </div>
+
+      <!-- ===== 8. SISTEMA VISUAL ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">08 — Sistema visual</h2>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">Identidad: color y tipografía</h3>
+
+      <h4 style="font-size:17px;font-weight:700;margin:14px 0 10px">Paleta base</h4>
+      <div class="keep" style="display:flex;flex-wrap:wrap;gap:14px;margin:0 0 22px">
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#F9E547;border:1px solid rgba(40,40,45,.08)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Amarillo<br><span style="color:#0071BC;font-weight:500">F9E547</span></figcaption></figure>
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#FF9300;border:1px solid rgba(40,40,45,.08)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Naranja<br><span style="color:#0071BC;font-weight:500">FF9300</span></figcaption></figure>
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#FF0000;border:1px solid rgba(40,40,45,.08)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Rojo<br><span style="color:#0071BC;font-weight:500">FF0000</span></figcaption></figure>
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#0077C8;border:1px solid rgba(40,40,45,.08)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Azul<br><span style="color:#0071BC;font-weight:500">0077C8</span></figcaption></figure>
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#008F00;border:1px solid rgba(40,40,45,.08)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Verde<br><span style="color:#0071BC;font-weight:500">008F00</span></figcaption></figure>
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#9437FF;border:1px solid rgba(40,40,45,.08)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Morado<br><span style="color:#0071BC;font-weight:500">9437FF</span></figcaption></figure>
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#945200;border:1px solid rgba(40,40,45,.08)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Café<br><span style="color:#0071BC;font-weight:500">945200</span></figcaption></figure>
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#000000;border:1px solid rgba(40,40,45,.08)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Negro<br><span style="color:#0071BC;font-weight:500">000000</span></figcaption></figure>
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#D6D6D6;border:1px solid rgba(40,40,45,.08)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Gris<br><span style="color:#0071BC;font-weight:500">D6D6D6</span></figcaption></figure>
+        <figure style="margin:0;width:78px"><div style="height:78px;border-radius:8px;background:#F5FAFF;border:1px solid rgba(40,40,45,.12)"></div><figcaption style="font-family:Raleway,sans-serif;font-size:11px;margin-top:6px;font-weight:600">Blanco<br><span style="color:#0071BC;font-weight:500">F5FAFF</span></figcaption></figure>
+      </div>
+
+      <h4 style="font-size:17px;font-weight:700;margin:14px 0 10px">Color de marca</h4>
+      <div class="keep" style="display:flex;gap:12px;margin:0 0 22px;flex-wrap:wrap">
+        <div style="flex:1;min-width:150px;background:#28282D;color:#fff;border-radius:10px;padding:16px 18px"><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Tinta</div><div style="font-family:Raleway,sans-serif;font-size:12px;opacity:.8;margin-top:2px">28282D · R40 G40 B45</div></div>
+        <div style="flex:1;min-width:150px;background:#0071BC;color:#fff;border-radius:10px;padding:16px 18px"><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Azul primario</div><div style="font-family:Raleway,sans-serif;font-size:12px;opacity:.85;margin-top:2px">0071BC · R0 G113 B188</div></div>
+        <div style="flex:1;min-width:150px;background:#FF4600;color:#fff;border-radius:10px;padding:16px 18px"><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Acento</div><div style="font-family:Raleway,sans-serif;font-size:12px;opacity:.9;margin-top:2px">FF4600 · R255 G70 B0</div></div>
+      </div>
+
+      <h4 style="font-size:17px;font-weight:700;margin:14px 0 10px">Tipografía</h4>
+      <div class="keep" style="display:flex;flex-direction:column;gap:14px;margin:0 0 6px">
+        <div style="border-bottom:1px solid rgba(40,40,45,.1);padding-bottom:12px">
+          <div style="font-family:Raleway,sans-serif;font-weight:600;font-size:28px">El veloz murciélago hindú comía feliz cardillo y kiwi</div>
+          <div style="font-family:Raleway,sans-serif;font-size:12px;color:#9aa3ad;margin-top:2px">Raleway SemiBold — <strong style="color:#5a6068">títulos</strong></div>
+        </div>
+        <div style="border-bottom:1px solid rgba(40,40,45,.1);padding-bottom:12px">
+          <div style="font-family:Quattrocento,serif;font-size:21px">El veloz murciélago hindú comía feliz cardillo y kiwi.</div>
+          <div style="font-family:Raleway,sans-serif;font-size:12px;color:#9aa3ad;margin-top:2px">Quattrocento — <strong style="color:#5a6068">textos</strong></div>
+        </div>
+        <div style="border-bottom:1px solid rgba(40,40,45,.1);padding-bottom:12px">
+          <div style="font-family:Raleway,sans-serif;font-weight:300;font-size:21px">El veloz murciélago hindú comía feliz cardillo y kiwi.</div>
+          <div style="font-family:Raleway,sans-serif;font-size:12px;color:#9aa3ad;margin-top:2px">Raleway Light — <strong style="color:#5a6068">objetos y botones</strong></div>
+        </div>
+        <div>
+          <div style="font-family:'Raleway Dots',sans-serif;font-size:21px">El veloz murcielago hindu comia feliz cardillo y kiwi.</div>
+          <div style="font-family:Raleway,sans-serif;font-size:12px;color:#9aa3ad;margin-top:2px">Raleway Dots — <strong style="color:#5a6068">notas</strong></div>
+        </div>
+      </div>
+
+      <!-- ===== 9. MODELO DE NEGOCIO ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">09 — Modelo de negocio</h2>
+      <div style="display:inline-block;font-family:Raleway,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#FF4600;background:rgba(255,70,0,.1);padding:3px 9px;border-radius:20px;margin-bottom:8px">Propuesta</div>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">Cómo se sostiene Lexicon</h3>
+      <p style="margin:0 0 14px">El deck no define monetización; estas son rutas coherentes con el producto. El activo defendible es el <strong>léxico</strong> —cuanta más gente clasifica, más valioso es el dato—.</p>
+      <ul style="margin:0;padding-left:18px">
+        <li style="margin-bottom:9px"><strong>Freemium.</strong> Clasificar es gratis y adictivo; registrarse desbloquea las herramientas de análisis y la biblioteca completa.</li>
+        <li style="margin-bottom:9px"><strong>Soportado por publicidad.</strong> Un nivel gratuito con anuncios (el deck ya contempla un espacio «Ad by Google») financia el acceso abierto.</li>
+        <li style="margin-bottom:9px"><strong>API / licencia de datos.</strong> Marcas y herramientas de diseño consultan el léxico vía API —el caso comercial de mayor valor.</li>
+        <li style="margin-bottom:9px"><strong>Análisis premium.</strong> Informes de texto e imagen a fondo para equipos de marketing, branding e investigación.</li>
+      </ul>
+
+      <!-- ===== 10. CASOS DE USO ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">10 — Casos de uso y mercado</h2>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 14px">Quién lo usa y para qué</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div class="keep" style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:14px 16px"><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Branding y marketing</div><div style="font-size:13.5px;color:#5a6068;margin-top:3px">Validar que una paleta transmite la emoción correcta, con evidencia y por segmento.</div></div>
+        <div class="keep" style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:14px 16px"><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Diseño y producto</div><div style="font-size:13.5px;color:#5a6068;margin-top:3px">Elegir color con datos en vez de intuición; auditar interfaces y campañas.</div></div>
+        <div class="keep" style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:14px 16px"><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Arte e investigación</div><div style="font-size:13.5px;color:#5a6068;margin-top:3px">Material de estudio sobre percepción del color por cultura, género y edad.</div></div>
+        <div class="keep" style="background:#fff;border:1px solid rgba(40,40,45,.08);border-radius:10px;padding:14px 16px"><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Educación y curiosidad</div><div style="font-size:13.5px;color:#5a6068;margin-top:3px">Una experiencia lúdica que enseña sobre uno mismo mientras alimenta el léxico.</div></div>
+      </div>
+
+      <!-- ===== 11. ROADMAP ===== -->
+      <h2 style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0071BC;margin:36px 0 6px">11 — Roadmap</h2>
+      <div style="display:inline-block;font-family:Raleway,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#FF4600;background:rgba(255,70,0,.1);padding:3px 9px;border-radius:20px;margin-bottom:8px">Propuesta</div>
+      <h3 style="font-size:27px;font-weight:700;line-height:1.15;margin:0 0 16px">Siguientes pasos</h3>
+      <div class="keep" style="display:flex;flex-direction:column;gap:0">
+        <div style="display:flex;gap:16px;padding:12px 0;border-bottom:1px solid rgba(40,40,45,.1)">
+          <div style="flex:0 0 110px;font-family:Raleway,sans-serif;font-weight:800;font-size:13px;color:#F9E547;text-shadow:0 0 1px rgba(40,40,45,.4)"><span style="color:#28282D;background:#F9E547;padding:2px 8px;border-radius:4px">Fase 1</span></div>
+          <div><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Semilla del léxico</div><div style="font-size:13.5px;color:#5a6068">Definir el set base de 2 500 palabras y la mecánica de clasificación. Lanzar el bucle definir→elegir→agregar.</div></div>
+        </div>
+        <div style="display:flex;gap:16px;padding:12px 0;border-bottom:1px solid rgba(40,40,45,.1)">
+          <div style="flex:0 0 110px"><span style="font-family:Raleway,sans-serif;font-weight:800;font-size:13px;color:#fff;background:#FF9300;padding:2px 8px;border-radius:4px">Fase 2</span></div>
+          <div><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Data y calibración</div><div style="font-size:13.5px;color:#5a6068">Vistas por palabra y por color, test recurrente, segmentación por género, edad y país.</div></div>
+        </div>
+        <div style="display:flex;gap:16px;padding:12px 0;border-bottom:1px solid rgba(40,40,45,.1)">
+          <div style="flex:0 0 110px"><span style="font-family:Raleway,sans-serif;font-weight:800;font-size:13px;color:#fff;background:#0071BC;padding:2px 8px;border-radius:4px">Fase 3</span></div>
+          <div><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Herramientas de análisis</div><div style="font-size:13.5px;color:#5a6068">Análisis de texto e imagen, biblioteca Lexicon navegable, cuentas registradas.</div></div>
+        </div>
+        <div style="display:flex;gap:16px;padding:12px 0">
+          <div style="flex:0 0 110px"><span style="font-family:Raleway,sans-serif;font-weight:800;font-size:13px;color:#fff;background:#9437FF;padding:2px 8px;border-radius:4px">Fase 4</span></div>
+          <div><div style="font-family:Raleway,sans-serif;font-weight:700;font-size:15px">Plataforma y API</div><div style="font-size:13.5px;color:#5a6068">Apertura del léxico vía API, monetización (premium + datos) y expansión a más idiomas y culturas.</div></div>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid rgba(40,40,45,.12);margin:36px 0 18px">
+      <p style="font-family:Raleway,sans-serif;font-size:12px;color:#9aa3ad;margin:0">Colores · EIDOS / emotion · Documento del proyecto · Contenido derivado del deck y el README del proyecto. Las secciones de modelo de negocio y roadmap son propuestas, no parte del material original.</p>
+
+    </td></tr></tbody>
+    <tfoot><tr><td class="ftr-space"></td></tr></tfoot>
+  </table>
+</main>
+</x-dc>
+</body>
+</html>
