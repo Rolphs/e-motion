@@ -9,25 +9,30 @@
     </div>
   </div>
 
-  <p class="card__pregunta">&iquest;Qu&eacute; color asocias con</p>
-  <h2 class="card__palabra">{{ palabra.termino }}</h2>
+  <p class="card__pregunta">&iquest;Qu&eacute; color asocias con esta palabra?</p>
+
+  <div class="wheel">
+    <svg class="wheel__svg" viewBox="{{ wheel_viewbox }}" role="group"
+         aria-label="Rueda de colores: elige uno para {{ palabra.termino }}">
+      {% for c in rueda %}
+      <path class="wheel__seg" d="{{ c.d }}" fill="{{ c.hex }}"
+            role="button" tabindex="0" aria-label="{{ c.nombre }}"
+            hx-post="/clasificar"
+            hx-vals='{"palabra_id": {{ palabra.id }}, "color_id": {{ c.id }}}'
+            hx-target="#card" hx-swap="outerHTML"
+            hx-trigger="click, keyup[key=='Enter'], keyup[key==' ']">
+        <title>{{ c.nombre }}</title>
+      </path>
+      {% endfor %}
+    </svg>
+    <div class="wheel__center" aria-hidden="false">
+      <span class="wheel__palabra">{{ palabra.termino }}</span>
+    </div>
+  </div>
+
   {% if palabra.definicion %}
   <p class="card__definicion">{{ palabra.definicion }}</p>
   {% endif %}
-
-  <form hx-post="/clasificar" hx-target="#card" hx-swap="outerHTML">
-    <input type="hidden" name="palabra_id" value="{{ palabra.id }}">
-    <fieldset class="colores-grid">
-      <legend class="sr-only">Elige un color para {{ palabra.termino }}</legend>
-      {% for c in colores %}
-      <button type="submit" name="color_id" value="{{ c.id }}"
-              class="color-btn" title="{{ c.nombre }}">
-        <span class="color-btn__chip" style="background: {{ c.hex }}"></span>
-        <span class="color-btn__name">{{ c.nombre }}</span>
-      </button>
-      {% endfor %}
-    </fieldset>
-  </form>
   {% else %}
   <div class="hecho">
     <h2 class="card__palabra">&iexcl;Listo!</h2>

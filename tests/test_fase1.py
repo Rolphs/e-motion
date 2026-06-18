@@ -69,12 +69,13 @@ def test_flujo_captura_http():
         assert client.get("/").status_code == 200
         assert client.get("/lexico").status_code == 200
 
-        # primera tarjeta de captura
+        # primera tarjeta de captura (rueda cromatica)
         r = client.get("/clasificar")
         assert r.status_code == 200
         assert client.cookies.get("sid")
-        palabra_id = re.search(r'name="palabra_id" value="(\d+)"', r.text).group(1)
-        color_id = re.search(r'name="color_id" value="(\d+)"', r.text).group(1)
+        assert 'class="wheel__svg"' in r.text
+        m = re.search(r'"palabra_id": (\d+), "color_id": (\d+)', r.text)
+        palabra_id, color_id = m.group(1), m.group(2)
 
         # POST de una eleccion -> devuelve la siguiente tarjeta (partial)
         r2 = client.post(

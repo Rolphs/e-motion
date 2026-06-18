@@ -18,6 +18,7 @@ from fastapi.templating import Jinja2Templates
 from app import repo
 from app.db import get_conn, init_db
 from app.seed import sembrar_todo
+from app.wheel import WHEEL_CX, WHEEL_CY, WHEEL_VIEWBOX, rueda
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 ASSETS_DIR = BASE_DIR / "assets"
@@ -103,7 +104,10 @@ def segmento_guardar(
 def _ctx_captura(sid: str) -> dict:
     return {
         "palabra": repo.siguiente_palabra(sid),
-        "colores": repo.get_colores(),
+        "rueda": rueda(repo.get_colores()),
+        "wheel_viewbox": WHEEL_VIEWBOX,
+        "wheel_cx": WHEEL_CX,
+        "wheel_cy": WHEEL_CY,
         "n": repo.contar_clasificadas(sid),
         "total": repo.contar_palabras(),
         "meta": META_OBJETIVO,
