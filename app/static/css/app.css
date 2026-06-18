@@ -125,6 +125,7 @@ h2 {
 
 .swatch .hex {
   font-family: "Quattrocento", Georgia, serif;
+  font-weight: 400;
   color: #565b66;
   font-size: 0.85rem;
 }
