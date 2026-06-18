@@ -4,36 +4,47 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("/assets/fonts/Raleway-Thin.ttf") format("truetype");
+  src: url("/assets/fonts/Raleway-Thin.woff2") format("woff2"),
+       url("/assets/fonts/Raleway-Thin.ttf") format("truetype");
   font-weight: 100;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("/assets/fonts/Raleway-Light.ttf") format("truetype");
+  src: url("/assets/fonts/Raleway-Light.woff2") format("woff2"),
+       url("/assets/fonts/Raleway-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("/assets/fonts/Raleway-SemiBold.ttf") format("truetype");
+  src: url("/assets/fonts/Raleway-SemiBold.woff2") format("woff2"),
+       url("/assets/fonts/Raleway-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Quattrocento";
-  src: url("/assets/fonts/Quattrocento-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Quattrocento-Regular.woff2") format("woff2"),
+       url("/assets/fonts/Quattrocento-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway Dots";
-  src: url("/assets/fonts/RalewayDots-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/RalewayDots-Regular.woff2") format("woff2"),
+       url("/assets/fonts/RalewayDots-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
 
 * { box-sizing: border-box; }
+
+:focus-visible {
+  outline: 3px solid var(--brand-acento, #ff4600);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
 
 body {
   margin: 0;
@@ -65,7 +76,7 @@ h1 {
 
 .nota {
   font-family: "Raleway Dots", cursive;
-  color: #6b7280;
+  color: #565b66;
   margin: 0 0 32px;
 }
 
@@ -86,6 +97,7 @@ h2 {
 }
 
 .swatch {
+  margin: 0;
   border: 1px solid #e2e6ea;
   border-radius: 12px;
   overflow: hidden;
@@ -94,6 +106,9 @@ h2 {
 
 .swatch .chip {
   height: 84px;
+  /* Borde interno >=3:1 para que TODO swatch sea visible,
+     incluido el Blanco sobre fondo blanco (WCAG 1.4.11). */
+  box-shadow: inset 0 0 0 1px rgba(40, 40, 45, 0.25);
 }
 
 .swatch .meta {
@@ -110,7 +125,7 @@ h2 {
 
 .swatch .hex {
   font-family: "Quattrocento", Georgia, serif;
-  color: #6b7280;
+  color: #565b66;
   font-size: 0.85rem;
 }
 
@@ -127,5 +142,5 @@ footer {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 0.85rem;
-  color: #6b7280;
+  color: #565b66;
 }

@@ -10,7 +10,7 @@ design/
   source/  → Colores.ai, mapa.ai   fuentes editables (Illustrator)
 assets/
   icons/   → Colores_*.svg (19)    iconografía del producto
-  fonts/   → *.ttf (5)             tipografías de marca
+  fonts/   → *.woff2 + *.ttf (5)  tipografías de marca (woff2 para web, ttf original)
   map/     → mapa.svg              mapa/flujo del proyecto
 ```
 
