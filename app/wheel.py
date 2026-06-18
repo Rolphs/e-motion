@@ -8,6 +8,7 @@ manteniendo el arte original como fuente unica de verdad (DRY).
 
 from __future__ import annotations
 
+import random
 import re
 from functools import lru_cache
 
@@ -37,8 +38,16 @@ def cargar_segmentos() -> list[str]:
 
 
 def rueda(colores: list[dict]) -> list[dict]:
-    """Empareja cada color (por orden) con su segmento de la rueda."""
+    """Empareja cada color con un segmento de la rueda.
+
+    Los colores se barajan en cada llamada para que aparezcan en distinto
+    orden cada vez, sin alterar la figura de la rueda: los segmentos (su
+    forma y posicion) son siempre los mismos, solo cambia que color ocupa
+    cada uno.
+    """
     segs = cargar_segmentos()
+    colores = list(colores)
+    random.shuffle(colores)
     salida = []
     for idx, color in enumerate(colores):
         if idx < len(segs):
