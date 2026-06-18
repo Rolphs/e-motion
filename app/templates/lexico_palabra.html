@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ palabra.termino }} - Colores{% endblock %}
+{% block content %}
+  <header class="topbar">
+    <a class="back" href="/lexico">&larr; Biblioteca</a>
+    <a class="back" href="/clasificar">Clasificar</a>
+  </header>
+
+  <p class="nota">Palabra</p>
+  <h1>{{ palabra.termino }}</h1>
+  {% if palabra.definicion %}<p class="card__definicion">{{ palabra.definicion }}</p>{% endif %}
+
+  <h2>Colores asociados</h2>
+  {% include "partials/_dist.html" with context %}
+{% endblock %}

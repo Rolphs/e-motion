@@ -1,0 +1,38 @@
+<div id="card" class="card">
+  {% if palabra %}
+  <div class="progreso">
+    <span class="progreso__txt">Has clasificado <strong>{{ n }}</strong> de {{ total }} palabras</span>
+    <div class="progreso__bar" role="progressbar"
+         aria-valuenow="{{ n }}" aria-valuemin="0" aria-valuemax="{{ total }}"
+         aria-label="Progreso de clasificacion">
+      <span style="width: {{ (100 * n / total) | round }}%"></span>
+    </div>
+  </div>
+
+  <p class="card__pregunta">&iquest;Qu&eacute; color asocias con</p>
+  <h2 class="card__palabra">{{ palabra.termino }}</h2>
+  {% if palabra.definicion %}
+  <p class="card__definicion">{{ palabra.definicion }}</p>
+  {% endif %}
+
+  <form hx-post="/clasificar" hx-target="#card" hx-swap="outerHTML">
+    <input type="hidden" name="palabra_id" value="{{ palabra.id }}">
+    <fieldset class="colores-grid">
+      <legend class="sr-only">Elige un color para {{ palabra.termino }}</legend>
+      {% for c in colores %}
+      <button type="submit" name="color_id" value="{{ c.id }}"
+              class="color-btn" title="{{ c.nombre }}">
+        <span class="color-btn__chip" style="background: {{ c.hex }}"></span>
+        <span class="color-btn__name">{{ c.nombre }}</span>
+      </button>
+      {% endfor %}
+    </fieldset>
+  </form>
+  {% else %}
+  <div class="hecho">
+    <h2 class="card__palabra">&iexcl;Listo!</h2>
+    <p class="card__definicion">Clasificaste las {{ n }} palabras disponibles. &iexcl;Gracias por alimentar el l&eacute;xico!</p>
+    <p><a class="card-link card-link--inline" href="/lexico">Ver la biblioteca &rarr;</a></p>
+  </div>
+  {% endif %}
+</div>

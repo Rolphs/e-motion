@@ -17,7 +17,11 @@ __pycache__/
 
 # Logs locales de servidor (scratch)
 _scratch_*.log
+_scratch_*
 *.log
+
+# Base de datos local (se regenera con `python -m app.seed`)
+data/*.db
 
 # Datos sensibles / PII (el lexicón puede capturar datos de usuarios)
 *.secret

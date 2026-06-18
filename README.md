@@ -111,9 +111,12 @@ App FastAPI (Fase 0: esqueleto + smoke test visual). Requiere `uv`.
 ```bash
 uv venv
 uv pip install -e .
+.venv/Scripts/python -m app.seed   # siembra colores + palabras (idempotente)
 .venv/Scripts/python -m uvicorn app.main:app --reload --port 8077
 # abrir http://127.0.0.1:8077/
 ```
+
+> La BD (`data/colores.db`) se crea y siembra sola al arrancar si está vacía.
 
 Tests: `.venv/Scripts/python -m pytest`
 

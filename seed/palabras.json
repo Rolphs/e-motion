@@ -1,0 +1,30 @@
+{
+  "$descripcion": "Semilla inicial del lexicon (Fase 1). Definiciones breves redactadas a mano (fuente: manual). El roadmap evalua DRAE/Wikcionario como fuente automatica mas adelante.",
+  "palabras": [
+    { "termino": "Felicidad", "definicion": "Estado de animo de quien se siente plenamente satisfecho." },
+    { "termino": "Alegria", "definicion": "Sentimiento grato y vivo que suele manifestarse con signos exteriores." },
+    { "termino": "Calido", "definicion": "Que da o produce calor; acogedor." },
+    { "termino": "Frio", "definicion": "De baja temperatura; falto de afecto o entusiasmo." },
+    { "termino": "Libertad", "definicion": "Facultad de obrar segun la propia voluntad." },
+    { "termino": "Tranquilidad", "definicion": "Estado de calma, sosiego y ausencia de agitacion." },
+    { "termino": "Energia", "definicion": "Vigor o fuerza de accion; capacidad de obrar." },
+    { "termino": "Confianza", "definicion": "Seguridad o esperanza firme en alguien o algo." },
+    { "termino": "Pasion", "definicion": "Emocion intensa que inclina con fuerza hacia algo." },
+    { "termino": "Calma", "definicion": "Estado de quietud y tranquilidad; ausencia de prisa." },
+    { "termino": "Naturaleza", "definicion": "Conjunto de los seres y fenomenos del mundo fisico." },
+    { "termino": "Misterio", "definicion": "Cosa secreta o muy dificil de comprender." },
+    { "termino": "Pureza", "definicion": "Cualidad de lo que esta libre de mezcla o impureza." },
+    { "termino": "Peligro", "definicion": "Riesgo o contingencia inminente de que suceda algun mal." },
+    { "termino": "Lujo", "definicion": "Abundancia de riqueza y de cosas refinadas o superfluas." },
+    { "termino": "Optimismo", "definicion": "Tendencia a ver y juzgar las cosas en su aspecto mas favorable." },
+    { "termino": "Nostalgia", "definicion": "Tristeza melancolica por el recuerdo de algo perdido." },
+    { "termino": "Equilibrio", "definicion": "Estado de un cuerpo o sistema en armonia y estabilidad." },
+    { "termino": "Fuerza", "definicion": "Vigor, robustez y capacidad para mover o resistir." },
+    { "termino": "Elegancia", "definicion": "Cualidad de lo que tiene gracia, sobriedad y buen gusto." },
+    { "termino": "Esperanza", "definicion": "Confianza de lograr o de que ocurra algo que se desea." },
+    { "termino": "Creatividad", "definicion": "Capacidad de crear o inventar cosas nuevas." },
+    { "termino": "Poder", "definicion": "Capacidad o fuerza para hacer algo o dominar." },
+    { "termino": "Deporte", "definicion": "Actividad fisica, a menudo competitiva, sujeta a reglas." },
+    { "termino": "Decadente", "definicion": "Que declina o decae; en proceso de perdida de vigor." }
+  ]
+}

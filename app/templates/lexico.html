@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Biblioteca - Colores{% endblock %}
+{% block content %}
+  <header class="topbar">
+    <a class="back" href="/">&larr; Colores</a>
+    <a class="back" href="/clasificar">Clasificar</a>
+  </header>
+
+  <h1>Biblioteca</h1>
+
+  <h2>Por color</h2>
+  <ul class="palette">
+    {% for c in colores %}
+    <li>
+      <a class="swatch swatch--link" href="/lexico/color/{{ c.id }}"
+         aria-label="Ver palabras asociadas a {{ c.nombre }}, {{ c.hex }}">
+        <span class="chip" style="background: {{ c.hex }}"></span>
+        <span class="meta">
+          <span class="name">{{ c.nombre }}</span>
+          <code class="hex">{{ c.hex }}</code>
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Por palabra ({{ palabras|length }})</h2>
+  <ul class="lista-palabras">
+    {% for p in palabras %}
+    <li><a href="/lexico/palabra/{{ p.id }}">{{ p.termino }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

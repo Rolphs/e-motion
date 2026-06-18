@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Segmento (opcional) - Colores{% endblock %}
+{% block content %}
+  <header class="topbar">
+    <a class="back" href="/clasificar">&larr; Volver a clasificar</a>
+  </header>
+
+  <h1>Cu&eacute;ntanos un poco (opcional)</h1>
+  <p class="card__definicion">
+    Las asociaciones de color <strong>no son universales</strong>: var&iacute;an por cultura y
+    g&eacute;nero. Estos datos son an&oacute;nimos y nos ayudan a analizar por segmento. Puedes saltarlos.
+  </p>
+
+  <form method="post" action="/segmento" class="form-segmento">
+    <label class="campo">
+      <span>G&eacute;nero</span>
+      <select name="genero">
+        <option value="">Prefiero no decir</option>
+        <option value="mujer">Mujer</option>
+        <option value="hombre">Hombre</option>
+        <option value="no_binario">No binario</option>
+        <option value="otro">Otro</option>
+      </select>
+    </label>
+
+    <label class="campo">
+      <span>Pa&iacute;s</span>
+      <input type="text" name="pais" maxlength="56" placeholder="p. ej. M&eacute;xico" autocomplete="country-name">
+    </label>
+
+    <div class="acciones">
+      <button type="submit" class="btn-primario">Guardar y clasificar</button>
+      <a class="back" href="/clasificar">Saltar</a>
+    </div>
+  </form>
+{% endblock %}

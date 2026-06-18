@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Clasificar - Colores{% endblock %}
+{% block content %}
+  <header class="topbar">
+    <a class="back" href="/">&larr; Colores</a>
+    <a class="back" href="/lexico">Biblioteca</a>
+  </header>
+
+  {% include "partials/_card.html" %}
+
+  <footer>
+    Tus elecciones son an&oacute;nimas.
+    <a href="/segmento">A&ntilde;adir g&eacute;nero/pa&iacute;s (opcional)</a> mejora el an&aacute;lisis por segmento.
+  </footer>
+{% endblock %}

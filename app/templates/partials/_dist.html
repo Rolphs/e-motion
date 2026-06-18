@@ -1,0 +1,21 @@
+{# Barras de distribucion reutilizables.
+   Espera: dist (lista con nombre, n, pct, hex opcional), barcolor (hex por defecto),
+   y enlaces opcionales via 'link_base' (p. ej. "/lexico/color/"). #}
+{% if dist %}
+<ol class="dist">
+  {% for d in dist %}
+  <li class="dist__row">
+    <div class="dist__label">
+      {% if link_base %}<a href="{{ link_base }}{{ d.id }}">{{ d.nombre }}</a>
+      {% else %}<span>{{ d.nombre }}</span>{% endif %}
+    </div>
+    <div class="dist__track">
+      <span class="dist__fill" style="width: {{ d.pct }}%; background: {{ d.hex or barcolor or '#0071BC' }}"></span>
+    </div>
+    <div class="dist__pct">{{ d.pct }}% <span class="dist__n">({{ d.n }})</span></div>
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<p class="card__definicion vacio">A&uacute;n no hay datos. &iexcl;S&eacute; el primero en <a href="/clasificar">clasificar</a>!</p>
+{% endif %}

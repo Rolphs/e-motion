@@ -1,11 +1,22 @@
 {% extends "base.html" %}
-{% block title %}Colores - smoke test{% endblock %}
+{% block title %}Colores{% endblock %}
 {% block content %}
   <header>
     <h1>Colores</h1>
     <p class="tagline">Un lexic&oacute;n colaborativo que traduce entre colores, palabras y emociones.</p>
-    <p class="nota">Fase 0 - esqueleto FastAPI + smoke test visual</p>
+    <p class="nota">&iquest;Qu&eacute; quieres hacer?</p>
   </header>
+
+  <nav class="menu" aria-label="Acciones principales">
+    <a class="card-link" href="/clasificar">
+      <span class="card-link__title">Clasificar</span>
+      <span class="card-link__desc">Elige qu&eacute; color asocias con cada palabra. As&iacute; crece el l&eacute;xico.</span>
+    </a>
+    <a class="card-link" href="/lexico">
+      <span class="card-link__title">Biblioteca (l&eacute;xico)</span>
+      <span class="card-link__desc">Consulta las asociaciones por palabra y por color.</span>
+    </a>
+  </nav>
 
   <h2>Paleta base ({{ palette|length }} colores)</h2>
   <ul class="palette">
@@ -22,16 +33,7 @@
     {% endfor %}
   </ul>
 
-  <h2>Tipograf&iacute;as de marca</h2>
-  <div class="fontcheck">
-    <p class="f-titulos">Raleway SemiBold &mdash; t&iacute;tulos. El veloz murci&eacute;lago hind&uacute;.</p>
-    <p class="f-objetos">Raleway Light &mdash; objetos y botones. El veloz murci&eacute;lago hind&uacute;.</p>
-    <p class="f-textos">Quattrocento &mdash; textos. El veloz murci&eacute;lago hind&uacute; com&iacute;a feliz.</p>
-    <p class="f-notas">Raleway Dots &mdash; notas. El veloz murci&eacute;lago hind&uacute;.</p>
-  </div>
-
   <footer>
     Colores &middot; capa de captura de datos &middot; parte de emotion.
-    Paleta y fuentes cargadas desde <code>/assets/</code> (fuente &uacute;nica de verdad).
   </footer>
 {% endblock %}

@@ -39,22 +39,17 @@ Construir el análisis con ML antes de tener datos sería techo sin cimientos
 
 El objetivo: una app **usable y desplegable que ya captura datos reales**.
 
-- [ ] **Modelo de datos** (ver esquema abajo): `palabras`, `colores`,
-      `asociaciones`, `segmentos`/`sesiones`.
-- [ ] **Seed de colores**: los 10 de la paleta base (ya en tokens).
-- [ ] **Seed de palabras**: empezar pequeño (~20-30), no las 2.500 de golpe.
-- [ ] **Definiciones**: resolver la estrategia DRAE para el seed inicial.
-- [ ] **Bucle de captura** (HTMX): palabra + definición → 10 colores como
-      botones accesibles → guardar elección → siguiente palabra, sin recargar.
-- [ ] **Segmentación opcional**: pantalla inicial (género/país) que se puede saltar;
-      se guarda en la sesión y se adjunta a cada asociación.
-- [ ] **Dos vistas de lectura mínimas**:
-  - *Por palabra*: reparto porcentual de colores asociados.
-  - *Por color*: palabras más asociadas y su % de match.
-- [ ] **Anti-ruido básico**: rate-limit por sesión, evitar doble envío.
+- [x] **Modelo de datos** (`app/db.py`): `colores`, `palabras`, `sesiones`, `asociaciones`.
+- [x] **Seed de colores**: los 10 de la paleta base (desde `tokens.json`).
+- [x] **Seed de palabras**: 25 términos (`seed/palabras.json`), no las 2.500 de golpe.
+- [x] **Definiciones**: seed manual (opción 1). DRAE/Wikcionario sigue pendiente de evaluar.
+- [x] **Bucle de captura** (HTMX): palabra + definición → 10 colores → guardar → siguiente, sin recargar.
+- [x] **Segmentación opcional**: pantalla `/segmento` (género/país), saltable, guardada en la sesión.
+- [x] **Dos vistas de lectura**: por palabra (reparto %) y por color (palabras + % match).
+- [x] **Anti-ruido básico**: índice único (sesión+palabra) evita doble envío y duplicados.
 
-**Criterio de "terminado":** un desconocido puede entrar, clasificar 10 palabras
-y ver cómo cambian las dos vistas. Datos persistidos en SQLite.
+**Criterio de "terminado":** un desconocido puede entrar, clasificar palabras y ver
+cambiar las dos vistas. Datos persistidos en SQLite. **CUMPLIDO** (8 tests verdes).
 
 ## Fase 2 — Data y calibración
 
