@@ -2,7 +2,7 @@
 
 > Un lexicón colaborativo que traduce entre **colores, palabras y emociones** — la capa de captura de datos para un sistema de hiperpersonalización de experiencias basado en ML/AI.
 
-Colores forma parte de **emotion**, dentro del proyecto mayor **EIDOS**.
+Colores forma parte de **emotion**.
 
 ---
 
@@ -113,7 +113,7 @@ Tokens disponibles en [`assets/tokens.json`](assets/tokens.json) y [`assets/toke
 ## Activos existentes
 
 El proyecto cuenta con materiales ya desarrollados (mayo 2021 – nov 2022), ubicados en
-`OneDrive-Personal/EIDOS/emotion/Colores/`:
+`OneDrive-Personal/emotion/Colores/`:
 
 - `Colores.key` / `Colores.pptx` — deck conceptual (13 láminas).
 - `Colores.ai` — objetos editables en Illustrator.

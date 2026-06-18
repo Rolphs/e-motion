@@ -1,6 +1,6 @@
 # Inventario de activos
 
-Activos del proyecto Colores importados desde `OneDrive/EIDOS/emotion/Colores` (origen: mayo 2021 – nov 2022). Solo se conservó lo que aporta valor; el ruido quedó fuera (ver más abajo).
+Activos del proyecto Colores importados desde `OneDrive/emotion/Colores` (origen: mayo 2021 – nov 2022). Solo se conservó lo que aporta valor; el ruido quedó fuera (ver más abajo).
 
 ## Estructura
 
