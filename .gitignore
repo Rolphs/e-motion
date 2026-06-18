@@ -15,6 +15,10 @@ __pycache__/
 .vscode/
 .idea/
 
+# Logs locales de servidor (scratch)
+_scratch_*.log
+*.log
+
 # Datos sensibles / PII (el lexicón puede capturar datos de usuarios)
 *.secret
 data/private/

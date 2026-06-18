@@ -1,0 +1,131 @@
+/* Colores - estilos base (Fase 0).
+   Define @font-face con las fuentes reales del proyecto y un layout minimo.
+   La paleta y familias tipograficas viven en /assets/tokens.css (no duplicar). */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quattrocento";
+  src: url("/assets/fonts/Quattrocento-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway Dots";
+  src: url("/assets/fonts/RalewayDots-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-blanco, #f5faff);
+  color: var(--brand-tinta, #28282d);
+  font-family: var(--font-textos, "Quattrocento", Georgia, serif);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+h1 {
+  font-family: var(--font-titulos, "Raleway", sans-serif);
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 4px;
+}
+
+.tagline {
+  font-family: var(--font-objetos, "Raleway", sans-serif);
+  font-weight: 300;
+  color: var(--brand-azul-primario, #0071bc);
+  margin: 0 0 8px;
+}
+
+.nota {
+  font-family: "Raleway Dots", cursive;
+  color: #6b7280;
+  margin: 0 0 32px;
+}
+
+h2 {
+  font-family: var(--font-titulos, "Raleway", sans-serif);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 40px 0 16px;
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.swatch {
+  border: 1px solid #e2e6ea;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.swatch .chip {
+  height: 84px;
+}
+
+.swatch .meta {
+  padding: 10px 12px;
+  font-family: var(--font-objetos, "Raleway", sans-serif);
+  font-weight: 300;
+}
+
+.swatch .name {
+  display: block;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.swatch .hex {
+  font-family: "Quattrocento", Georgia, serif;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.fontcheck p { margin: 6px 0; }
+.f-titulos  { font-family: "Raleway"; font-weight: 600; }
+.f-objetos  { font-family: "Raleway"; font-weight: 300; }
+.f-textos   { font-family: "Quattrocento", Georgia, serif; }
+.f-notas    { font-family: "Raleway Dots", cursive; }
+
+footer {
+  margin-top: 56px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e6ea;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: #6b7280;
+}

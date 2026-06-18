@@ -104,6 +104,19 @@ Tokens disponibles en [`assets/tokens.json`](assets/tokens.json) y [`assets/toke
 
 **Tipografías:** Raleway SemiBold (títulos) · Raleway Light (objetos y botones) · Quattrocento (textos) · Raleway Dots (notas).
 
+## Cómo correr (dev)
+
+App FastAPI (Fase 0: esqueleto + smoke test visual). Requiere `uv`.
+
+```bash
+uv venv
+uv pip install -e .
+.venv/Scripts/python -m uvicorn app.main:app --reload --port 8077
+# abrir http://127.0.0.1:8077/
+```
+
+Tests: `.venv/Scripts/python -m pytest`
+
 ## Documentación
 
 - [`ROADMAP.md`](ROADMAP.md) — plan de arranque indicativo (fases, esquema de datos, decisiones técnicas).

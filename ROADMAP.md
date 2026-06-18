@@ -27,13 +27,13 @@ Construir el análisis con ML antes de tener datos sería techo sin cimientos
 
 ---
 
-## Fase 0 — Fundamentos *(hecho / en curso)*
+## Fase 0 — Fundamentos *(hecho)*
 
 - [x] Importar y ordenar activos (assets, design, docs) en el repo.
 - [x] Design tokens en CSS + JSON.
 - [x] `git init` + `.gitignore`.
-- [ ] Esqueleto del proyecto FastAPI (estructura de carpetas, `pyproject.toml`, venv con `uv`).
-- [ ] Página base que cargue fuentes y tokens reales (smoke test visual).
+- [x] Esqueleto del proyecto FastAPI (estructura `app/`, `pyproject.toml`, venv con `uv`).
+- [x] Página base que carga fuentes y tokens reales (smoke test visual + 3 tests verdes).
 
 ## Fase 1 — Semilla del léxico + bucle de captura *(MVP — el corazón)*
 

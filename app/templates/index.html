@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Colores - smoke test{% endblock %}
+{% block content %}
+  <h1>Colores</h1>
+  <p class="tagline">Un lexicon colaborativo que traduce entre colores, palabras y emociones.</p>
+  <p class="nota">Fase 0 - esqueleto FastAPI + smoke test visual</p>
+
+  <h2>Paleta base ({{ palette|length }} colores)</h2>
+  <ul class="palette">
+    {% for c in palette %}
+    <li class="swatch">
+      <div class="chip" style="background: {{ c.hex }}"></div>
+      <div class="meta">
+        <span class="name">{{ c.nombre }}</span>
+        <span class="hex">{{ c.hex }}</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Tipografias de marca</h2>
+  <div class="fontcheck">
+    <p class="f-titulos">Raleway SemiBold &mdash; titulos. El veloz murcielago hindu.</p>
+    <p class="f-objetos">Raleway Light &mdash; objetos y botones. El veloz murcielago hindu.</p>
+    <p class="f-textos">Quattrocento &mdash; textos. El veloz murcielago hindu comia feliz.</p>
+    <p class="f-notas">Raleway Dots &mdash; notas. El veloz murcielago hindu.</p>
+  </div>
+
+  <footer>
+    Colores &middot; capa de captura de datos &middot; parte de emotion.
+    Paleta y fuentes cargadas desde <code>/assets/</code> (fuente unica de verdad).
+  </footer>
+{% endblock %}
